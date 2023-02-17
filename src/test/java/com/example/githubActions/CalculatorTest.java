@@ -15,4 +15,12 @@ class CalculatorTest {
         Assertions.assertEquals(4, result);
     }
 
+    @Test
+    void shouldFailTest(){
+        Calculator calculator = new Calculator();
+
+        int result = calculator.add(2, 2);
+        Assertions.assertEquals(3, result);
+    }
+
 }
