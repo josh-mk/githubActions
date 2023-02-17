@@ -16,11 +16,11 @@ class CalculatorTest {
     }
 
     @Test
-    void shouldFailTest(){
+    void shouldGetFiveWhenWeAddTwoAndThree(){
         Calculator calculator = new Calculator();
 
-        int result = calculator.add(2, 2);
-        Assertions.assertEquals(3, result);
+        int result = calculator.add(2, 3);
+        Assertions.assertEquals(5, result);
     }
 
 }
