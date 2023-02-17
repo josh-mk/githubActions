@@ -23,4 +23,12 @@ class CalculatorTest {
         Assertions.assertEquals(5, result);
     }
 
+    @Test
+    void shouldGetTenWhenWeAddFourAndSix(){
+        Calculator calculator = new Calculator();
+
+        int result = calculator.add(6, 4);
+        Assertions.assertEquals(15, result);
+    }
+
 }
